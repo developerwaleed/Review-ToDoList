@@ -1,13 +1,6 @@
-import _ from 'lodash';
+/* eslint-disable linebreak-style */
 import './style.css';
+import List from './modules/toDoTask.js';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Loadash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const list = new List();
+list.display();
